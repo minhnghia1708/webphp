@@ -20,6 +20,7 @@
   	$i++;
   	$thanhtien = $row['giasanpham']*$row['soluongmua'];
   	$tongtien += $thanhtien;
+    
    ?>
   <tr style="text-align: center;">
     <td><?php echo $i ?></td>

@@ -1,4 +1,3 @@
-
  <?php 
   $sql_sua_danhmucsp = "SELECT * FROM tbl_danhmuc WHERE id_danhmuc='$_GET[iddanhmuc]' LIMIT 1";
   $query_sua_danhmucsp = mysqli_query($mysqli,$sql_sua_danhmucsp);

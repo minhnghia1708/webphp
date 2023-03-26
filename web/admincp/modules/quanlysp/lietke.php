@@ -21,10 +21,10 @@
   while($row = mysqli_fetch_array($query_lietke_sp)){
   	$i++;
    ?>
-  <tr>
+  <tr style="text-align: center;">
     <td><?php echo $i ?></td>
     <td><?php echo $row['tensanpham'] ?></td>
-    <td><img src="modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?>" width="150px"></td>
+    <td><img width="150px" src="modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?>" width="150px"></td>
     <td><?php echo $row['giasanpham'] ?></td>
     <td><?php echo $row['soluong'] ?></td>
     <td><?php echo $row['tendanhmuc'] ?></td>

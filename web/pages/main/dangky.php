@@ -6,10 +6,11 @@
 		$matkhau = md5($_POST['matkhau']);
 		$diachi = $_POST['diachi'];
 		$sql_dangky = mysqli_query($mysqli,"INSERT INTO tbl_dangky(tenkhachhang,email,diachi,matkhau,dienthoai) VALUE('".$tenkhachhang."','".$email."','".$diachi."','".$matkhau."','".$dienthoai."')");
-		if($sql_dangky){
+		if($tenkhachhang == "" || $matkhau=="" || $email=="" || $diachi=="" || $dienthoai==""){
+			echo '<p style="color: red";>Vui lòng nhập đầy đủ thông tin</p>';
+		}elseif($sql_dangky){
 			echo '<p style="color: green";>Bạn đã đăng ký thành công</p>';
 			$_SESSION['dangky'] = $tenkhachhang;
-
 			$_SESSION['id_khachhang'] = mysqli_insert_id($mysqli);
 			header('Location:index.php?quanly=giohang');
 		}
