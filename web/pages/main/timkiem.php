@@ -6,9 +6,6 @@
     $query_pro = mysqli_query($mysqli,$sql_pro);
 
 ?>
-
-			
-
 	<div class="new_arrivals">
 		<div class="container">
 			<div class="row">

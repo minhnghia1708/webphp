@@ -2,8 +2,9 @@
 <table border="1" width="100%" style="border-collapse: collapse;">
 <form method="POST" action="modules/quanlybaiviet/xuly.php" enctype="multipart/form-data">
   <tr>
-    <td>Tên bài viết</td>
-    <td><input type="text" name="tenbaiviet" width="100%"></td>
+    
+     <td> <label  class="form-label">Tên bài viết</label> </td>
+    <td><input type="text"class="form-control"  name="tenbaiviet" width="100%"></td>
   </tr>
   <tr>
     <td>hình ảnh sản phẩm </td>
@@ -45,7 +46,7 @@
   </tr>
   <tr>
     
-    <td colspan="2"><input type="submit" name="thembaiviet" value="Thêm bài viết"></td>
+    <td colspan="2"><button type="submit" name="thembaiviet" class="btn btn-primary">Thêm Bài Viết Mới </button></td>
   </tr>
 </form>
 </table>

@@ -8,18 +8,23 @@
   <?php 
   while($dong = mysqli_fetch_array($query_sua_danhmucbv)){
   ?>
-  <tr>
-    <td>Tên danh mục</td>
-    <td><input type="text" value="<?php echo $dong['tendanhmuc_baiviet'] ?>" name="tendanhmucbaiviet"></td>
-  </tr>
-  <tr>
-    <td>Thứ tự</td>
-    <td><input type="text" value="<?php echo $dong['thutu'] ?>" name="thutu"></td>
-  </tr>
-  <tr>
-    
-    <td colspan="2"><input type="submit" name="suadanhmucbaiviet" value="Sửa danh mục bài viết"></td>
-  </tr>
+ 
+  <div class="mb-3">
+                                    <label  class="form-label">Tên Danh Mục</label>
+                                    
+                                
+                                    <input type="text" class="form-control" id="exampleInputEmail1" value="<?php echo $dong['tendanhmuc_baiviet'] ?>" name="tendanhmucbaiviet">
+                                  </div>
+
+                                </div>
+                                     <div class="mb-3">
+                                      <label  class="form-label">Thứ Tự</label>
+                                     
+                                    <input type="text" class="form-control" id="exampleInputEmail1" value="<?php echo $dong['thutu'] ?>" name="thutu">
+                                    </div>
+                                </div>
+                                    
+                                    <button type="submit" name="suadanhmucbaiviet" class="btn btn-primary">Sửa</button>
   <?php
   }
   ?>

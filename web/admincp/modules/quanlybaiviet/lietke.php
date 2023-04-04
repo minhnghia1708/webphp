@@ -3,8 +3,9 @@
   $query_lietke_bv = mysqli_query($mysqli,$sql_lietke_bv);
  ?>
 <p>Liệt kê danh mục bài viết</p>
-<table border="1" width="100%" style="border-collapse: collapse;">
-  <tr>
+<div class="container-fluid pt-4 px-4">
+<div class="table-responsive">
+      <table class="table text-start align-middle table-bordered table-hover mb-0">  <tr>
     <th>Id</th>
     <th>Tên sản phẩm</th>
     <th>Hình ảnh</th>
@@ -43,3 +44,5 @@
 ?>
 
 </table>
+</div>
+</div>

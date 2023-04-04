@@ -1,5 +1,5 @@
 <div class="clear"></div>
-<div class="main">
+<div class="main" style="padding-left: 250px;">
 	<?php
 				if (isset($_GET['action']) && $_GET['query']) {
 					$tam = $_GET['action'];

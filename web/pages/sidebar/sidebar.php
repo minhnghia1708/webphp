@@ -1,7 +1,10 @@
 
-	<div class="sidebar">
-			<h4>Danh mục sản phẩm</h4>
-			<ul class="list_sidebar">
+	 <div class="sidebar">
+					<div class="sidebar_section">
+						<div class="sidebar_title">
+							<h5>Product Category</h5>
+						</div>
+						<ul class="sidebar_categories">
 				 <?php 
        				$sql_danhmuc = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
         			$query_danhmuc = mysqli_query($mysqli,$sql_danhmuc);
@@ -13,10 +16,17 @@
 			}
 			?>
 		</ul>
-	</div>
-	<div class="sidebar">
-			<h4>Danh mục bài viết</h4>
-			<ul>
+						
+						
+					</div>
+
+					
+					
+					<div class="sidebar_section">
+						<div class="sidebar_title">
+							<h5>Danh mục bài viết</h5>
+						</div>
+						<ul>
 				 <?php 
        				$sql_danhmuc_bv = "SELECT * FROM tbl_danhmucbaiviet ORDER BY id_baiviet DESC";
         			$query_danhmuc_bv = mysqli_query($mysqli,$sql_danhmuc_bv);
@@ -28,4 +38,8 @@
 			}
 			?>
 		</ul>
-	</div>
+					</div>
+
+					
+
+				</div> 

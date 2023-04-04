@@ -9,8 +9,9 @@ while($row = mysqli_fetch_array($query_sua_bv)){
    ?>
 <form method="POST" action="modules/quanlybaiviet/xuly.php?idbaiviet=<?php echo $row['id'] ?>" enctype="multipart/form-data">
   <tr>
-    <td>Tên bài viết</td>
-    <td><input type="text" value="<?php echo $row['tenbaiviet'] ?>" name="tenbaiviet" width="100%"></td>
+    
+     <td> <label  class="form-label">Tên bài viết</label> </td>
+    <td><input type="text" value="<?php echo $row['tenbaiviet'] ?>"class="form-control"  name="tenbaiviet" width="100%"></td>
   </tr>
   <tr>
     <td>hình ảnh sản phẩm </td>
@@ -70,7 +71,7 @@ while($row = mysqli_fetch_array($query_sua_bv)){
     </td>
   </tr>
   <tr>
-    <td colspan="2"><input type="submit" name="suabaiviet" value="Sửa bài viết"></td>
+    <td colspan="2"><button type="submit" name="suabaiviet" class="btn btn-primary">Sửa Bài Viết  </button></td>
   </tr>
 </form>
 <?php
